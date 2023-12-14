@@ -75,6 +75,49 @@ body header {
 }
 body header h2 {
   font-style: italic;
+  font-size: 10px;
+}
+body header button {
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+body header a {
+  text-decoration: none;
+  margin: 1%;
+  color: fuchsia;
+}
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
 @media screen and (min-width: 376px) {
   body main {
@@ -137,7 +180,7 @@ body main .game_0 p {
   padding-left: 10%;
 }
 body main .game_0:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 body main .game_0 div {
   display: flex;
@@ -218,7 +261,7 @@ body main .game_1 p {
   padding-left: 10%;
 }
 body main .game_1:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 body main .game_1 div {
   display: flex;
@@ -299,7 +342,7 @@ body main .game_2 p {
   padding-left: 10%;
 }
 body main .game_2:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 body main .game_2 div {
   display: flex;
@@ -380,7 +423,7 @@ body main .game_3 p {
   padding-left: 10%;
 }
 body main .game_3:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 body main .game_3 div {
   display: flex;
@@ -461,7 +504,7 @@ body main .game_4 p {
   padding-left: 10%;
 }
 body main .game_4:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 body main .game_4 div {
   display: flex;
@@ -542,7 +585,7 @@ body main .game_5 p {
   padding-left: 10%;
 }
 body main .game_5:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 body main .game_5 div {
   display: flex;
@@ -623,7 +666,7 @@ body main .game_6 p {
   padding-left: 10%;
 }
 body main .game_6:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 body main .game_6 div {
   display: flex;
@@ -704,7 +747,7 @@ body main .game_7 p {
   padding-left: 10%;
 }
 body main .game_7:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 body main .game_7 div {
   display: flex;
@@ -785,7 +828,7 @@ body main .game_8 p {
   padding-left: 10%;
 }
 body main .game_8:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 body main .game_8 div {
   display: flex;
@@ -866,7 +909,7 @@ body main .game_9 p {
   padding-left: 10%;
 }
 body main .game_9:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 body main .game_9 div {
   display: flex;

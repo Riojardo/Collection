@@ -74,7 +74,7 @@ link : 'https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim',
                             { 
 name : "Half-Life",
 year_release : 1998,
- develloper : "Valve",
+develloper : "Valve",
 genre : "FPS",
 style : ["science-fiction","horror"],
 imgFile: 'half-life.jfif', 
@@ -111,6 +111,12 @@ function getContrastColor(rgbColor) {
     else{
     return ("white")
    }
+}
+
+function clean_collection (){
+    let main_collection = document.querySelector('main');
+    main_collection.innerHTML = '';
+    create_cards();
 }
 
 function divise_body() {
@@ -180,9 +186,80 @@ function complete_header() {
     let header_titre = document.createElement("h1");
     header_titre.textContent = "Collection des Jeux qui m'ont le plus marqués";
     document.querySelector("header").appendChild(header_titre);
+  
     let header_sous_titre = document.createElement("h2");
     header_sous_titre.textContent = "( Liste non-exhaustive, sujette à révision) ";
     document.querySelector("header").appendChild(header_sous_titre);
-}
+  
+    let choice_button = document.createElement("button");
+    choice_button.textContent = "Choice order";
+    choice_button.className = "dropdown-btn";
+    document.querySelector("header").appendChild(choice_button);
+  
+    let choice_button_content = document.createElement("div");
+    choice_button_content.className = "dropdown-content"; // Change the class name
+    choice_button_content.style.display = 'none';
+    document.querySelector("header").appendChild(choice_button_content);
+  
+    let options = ["Alphabetic ", " Chronologic ", " CHAOTIC !!! ", " Normal "];
+    options.forEach(function (optionText) {
+      let optionLink = document.createElement('a');
+      optionLink.href = '#';
+      optionLink.textContent = optionText;
+      optionLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        switch (optionText.trim().toLowerCase()) {
+            case 'alphabetic':
+              clean_collection();
+              games_collection.sort((a, b) => a.name.localeCompare(b.name));
+              clean_collection();
+              break;
+            case 'chronologic':
+              clean_collection();
+              games_collection.sort((a, b) => a.year_release - b.year_release);
+              clean_collection();
+              break;
+            case 'chaotic !!!':
+              clean_collection();
+              games_collection.sort((a, b) => 0.5 - Math.random());
+              clean_collection();
+              break;
+            case 'normal':
+              window.location.reload();
+              break;
+              default:
+              break;
+          }
+      });
+      choice_button_content.appendChild(optionLink);
+    });
+  
+    function make_drop() {
+      choice_button_content.style.display = (choice_button_content.style.display === 'block') ? 'none' : 'block';
+    }
+  
+    window.addEventListener('click', function (event) {
+      if (event.target !== choice_button && !choice_button_content.contains(event.target)) {
+        choice_button_content.style.display = 'none';
+      }
+    });
+   
+    choice_button.addEventListener('click', make_drop);
+  }
+  
+  complete_header();
 
-complete_header();
+/*
+ games_collection.sort((a, b) => {
+    let game.nameA = a.game.name.toUpperCase(); 
+    let game.nameB = b.game.name.toUpperCase(); // ignore upper and lowercase
+    if (game.nameA < game.nameB) {
+      return -1;
+    }
+    if (game.nameA > game.nameB) {
+      return 1;
+    }
+    return 0;
+});   
+*/
+
