@@ -193,11 +193,11 @@ function complete_header() {
   
     let choice_button = document.createElement("button");
     choice_button.textContent = "Choice order";
-    choice_button.className = "dropdown-btn";
+    choice_button.className = "choice_button";
     document.querySelector("header").appendChild(choice_button);
   
     let choice_button_content = document.createElement("div");
-    choice_button_content.className = "dropdown-content"; // Change the class name
+    choice_button_content.className = "choice_button_content"; 
     choice_button_content.style.display = 'none';
     document.querySelector("header").appendChild(choice_button_content);
   
@@ -218,6 +218,7 @@ function complete_header() {
               clean_collection();
               games_collection.sort((a, b) => a.year_release - b.year_release);
               clean_collection();
+              
               break;
             case 'chaotic !!!':
               clean_collection();
@@ -237,7 +238,6 @@ function complete_header() {
     function make_drop() {
       choice_button_content.style.display = (choice_button_content.style.display === 'block') ? 'none' : 'block';
     }
-  
     window.addEventListener('click', function (event) {
       if (event.target !== choice_button && !choice_button_content.contains(event.target)) {
         choice_button_content.style.display = 'none';
@@ -246,7 +246,6 @@ function complete_header() {
    
     choice_button.addEventListener('click', make_drop);
   }
-  
   complete_header();
 
 /*

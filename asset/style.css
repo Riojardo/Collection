@@ -180,7 +180,13 @@ body main .game_0 p {
   padding-left: 10%;
 }
 body main .game_0:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+     border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  border-image-slice: 1;
+  animation: glower 5s linear infinite;
+  box-shadow: 35px 95px 55px 35px #0ff;
 }
 body main .game_0 div {
   display: flex;
@@ -205,28 +211,21 @@ body main .game_0 h3 {
 body main .game_0.glowing {
   position: relative;
 }
-body main .game_0.glowing:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-     border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-  border-image-slice: 1;
-  z-index: -1;
-}
 @keyframes glower {
   0% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
   50% {
-    background-position: 400% 0;
+    border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   }
   100% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
 }
 body main .game_1 {
@@ -261,7 +260,13 @@ body main .game_1 p {
   padding-left: 10%;
 }
 body main .game_1:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+     border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  border-image-slice: 1;
+  animation: glower 5s linear infinite;
+  box-shadow: 35px 95px 55px 35px #0ff;
 }
 body main .game_1 div {
   display: flex;
@@ -286,28 +291,21 @@ body main .game_1 h3 {
 body main .game_1.glowing {
   position: relative;
 }
-body main .game_1.glowing:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-     border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-  border-image-slice: 1;
-  z-index: -1;
-}
 @keyframes glower {
   0% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
   50% {
-    background-position: 400% 0;
+    border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   }
   100% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
 }
 body main .game_2 {
@@ -342,7 +340,13 @@ body main .game_2 p {
   padding-left: 10%;
 }
 body main .game_2:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+     border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  border-image-slice: 1;
+  animation: glower 5s linear infinite;
+  box-shadow: 35px 95px 55px 35px #0ff;
 }
 body main .game_2 div {
   display: flex;
@@ -367,28 +371,21 @@ body main .game_2 h3 {
 body main .game_2.glowing {
   position: relative;
 }
-body main .game_2.glowing:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-     border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-  border-image-slice: 1;
-  z-index: -1;
-}
 @keyframes glower {
   0% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
   50% {
-    background-position: 400% 0;
+    border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   }
   100% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
 }
 body main .game_3 {
@@ -423,7 +420,13 @@ body main .game_3 p {
   padding-left: 10%;
 }
 body main .game_3:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+     border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  border-image-slice: 1;
+  animation: glower 5s linear infinite;
+  box-shadow: 35px 95px 55px 35px #0ff;
 }
 body main .game_3 div {
   display: flex;
@@ -448,28 +451,21 @@ body main .game_3 h3 {
 body main .game_3.glowing {
   position: relative;
 }
-body main .game_3.glowing:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-     border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-  border-image-slice: 1;
-  z-index: -1;
-}
 @keyframes glower {
   0% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
   50% {
-    background-position: 400% 0;
+    border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   }
   100% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
 }
 body main .game_4 {
@@ -504,7 +500,13 @@ body main .game_4 p {
   padding-left: 10%;
 }
 body main .game_4:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+     border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  border-image-slice: 1;
+  animation: glower 5s linear infinite;
+  box-shadow: 35px 95px 55px 35px #0ff;
 }
 body main .game_4 div {
   display: flex;
@@ -529,28 +531,21 @@ body main .game_4 h3 {
 body main .game_4.glowing {
   position: relative;
 }
-body main .game_4.glowing:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-     border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-  border-image-slice: 1;
-  z-index: -1;
-}
 @keyframes glower {
   0% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
   50% {
-    background-position: 400% 0;
+    border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   }
   100% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
 }
 body main .game_5 {
@@ -585,7 +580,13 @@ body main .game_5 p {
   padding-left: 10%;
 }
 body main .game_5:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+     border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  border-image-slice: 1;
+  animation: glower 5s linear infinite;
+  box-shadow: 35px 95px 55px 35px #0ff;
 }
 body main .game_5 div {
   display: flex;
@@ -610,28 +611,21 @@ body main .game_5 h3 {
 body main .game_5.glowing {
   position: relative;
 }
-body main .game_5.glowing:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-     border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-  border-image-slice: 1;
-  z-index: -1;
-}
 @keyframes glower {
   0% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
   50% {
-    background-position: 400% 0;
+    border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   }
   100% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
 }
 body main .game_6 {
@@ -666,7 +660,13 @@ body main .game_6 p {
   padding-left: 10%;
 }
 body main .game_6:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+     border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  border-image-slice: 1;
+  animation: glower 5s linear infinite;
+  box-shadow: 35px 95px 55px 35px #0ff;
 }
 body main .game_6 div {
   display: flex;
@@ -691,28 +691,21 @@ body main .game_6 h3 {
 body main .game_6.glowing {
   position: relative;
 }
-body main .game_6.glowing:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-     border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-  border-image-slice: 1;
-  z-index: -1;
-}
 @keyframes glower {
   0% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
   50% {
-    background-position: 400% 0;
+    border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   }
   100% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
 }
 body main .game_7 {
@@ -747,7 +740,13 @@ body main .game_7 p {
   padding-left: 10%;
 }
 body main .game_7:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+     border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  border-image-slice: 1;
+  animation: glower 5s linear infinite;
+  box-shadow: 35px 95px 55px 35px #0ff;
 }
 body main .game_7 div {
   display: flex;
@@ -772,28 +771,21 @@ body main .game_7 h3 {
 body main .game_7.glowing {
   position: relative;
 }
-body main .game_7.glowing:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-     border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-  border-image-slice: 1;
-  z-index: -1;
-}
 @keyframes glower {
   0% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
   50% {
-    background-position: 400% 0;
+    border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   }
   100% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
 }
 body main .game_8 {
@@ -828,7 +820,13 @@ body main .game_8 p {
   padding-left: 10%;
 }
 body main .game_8:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+     border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  border-image-slice: 1;
+  animation: glower 5s linear infinite;
+  box-shadow: 35px 95px 55px 35px #0ff;
 }
 body main .game_8 div {
   display: flex;
@@ -853,28 +851,21 @@ body main .game_8 h3 {
 body main .game_8.glowing {
   position: relative;
 }
-body main .game_8.glowing:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-     border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-  border-image-slice: 1;
-  z-index: -1;
-}
 @keyframes glower {
   0% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
   50% {
-    background-position: 400% 0;
+    border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   }
   100% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
 }
 body main .game_9 {
@@ -909,7 +900,13 @@ body main .game_9 p {
   padding-left: 10%;
 }
 body main .game_9:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  border: 7px solid transparent;
+  -o-border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+     border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  border-image-slice: 1;
+  animation: glower 5s linear infinite;
+  box-shadow: 35px 95px 55px 35px #0ff;
 }
 body main .game_9 div {
   display: flex;
@@ -934,27 +931,20 @@ body main .game_9 h3 {
 body main .game_9.glowing {
   position: relative;
 }
-body main .game_9.glowing:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-     border-image: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #5aabde);
-  border-image-slice: 1;
-  z-index: -1;
-}
 @keyframes glower {
   0% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
   50% {
-    background-position: 400% 0;
+    border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   }
   100% {
-    background-position: 0 0;
+    border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
   }
 }/*# sourceMappingURL=style.css.map */

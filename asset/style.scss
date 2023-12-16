@@ -40,8 +40,14 @@
         padding-left: 10%;
     }
     &:hover {
-        transform: scale(1.1); 
+        transform: scale(1.12); 
+        border: 7px solid transparent;
+        border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+        border-image-slice: 1;
+        animation: glower 5s linear infinite;
+        box-shadow:35px 95px 55px 35px #0ff;
       }
+      
     div{
     display: flex;
 	flex-direction: row;
@@ -66,37 +72,26 @@
       &.glowing {
         position: relative;
 
-        &:before {
-            content: '';
-            position: absolute;
-            left: -5px;
-            top: -5px;
-            right: -5px;
-            bottom: -5px;
-            border: 5px solid transparent;
-            border-image: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
-            border-image-slice: 1;
-            z-index: -1;
-            
-        }
     }
 
-
-    @keyframes glower {
+    @keyframes glower{
         0% {
-            background-position: 0 0;
+          border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
         }
-
+        25% {
+          border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
+        }
         50% {
-            background-position: 400% 0;
+          border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
         }
-
+        75% {
+          border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+        }
         100% {
-            background-position: 0 0;
+          border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
         }
-    }
+      }
 }
-
 
 body{
     max-width: 1440px;
@@ -104,10 +99,6 @@ body{
     position: static;
     margin-left: 5%;
     margin-right: 5%;
-
-    @media screen and (max-width: 375px){
-
-    }
 
 header{
     min-width: 100%;
